@@ -143,6 +143,30 @@ footer p {
     z-index: 10;
 }
 
+/* Bottom Right Box - Glassy Look */
+.bottom-right-box {
+    position: absolute;
+    bottom: 4rem;
+    right: 4rem;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    z-index: 20;
+    /* Limit the size of the box */
+    max-width: 300px;
+}
+
+.bottom-right-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    /* Optional: if you want the image itself to have rounded corners */
+}
+
 @media (max-width: 768px) {
 
     /* Allow scrolling and auto height */
@@ -159,6 +183,7 @@ footer p {
     .content-wrapper,
     .system-status,
     .top-right-box,
+    .bottom-right-box,
     footer {
         position: relative;
         top: auto;
@@ -193,11 +218,20 @@ footer p {
     }
 
     footer {
-        order: 4;
+        order: 5;
         margin-top: 2rem;
         position: relative;
         text-align: center;
         width: 100%;
+    }
+
+    .bottom-right-box {
+        order: 4;
+        margin-bottom: 2rem;
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
     }
 
     h1 {
