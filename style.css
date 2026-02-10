@@ -128,22 +128,6 @@ footer p {
     margin: 0;
 }
 
-/* Top Right Box */
-.top-right-box {
-    position: absolute;
-    top: 4rem;
-    right: 4rem;
-    border: 1px solid var(--accent-secondary);
-    padding: 1rem;
-    color: var(--text-secondary);
-    font-family: inherit;
-    font-size: 0.9rem;
-    max-width: 200px;
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(5px);
-    z-index: 10;
-}
-
 /* Bottom Right Box - Glassy Look */
 .bottom-right-box {
     position: absolute;
